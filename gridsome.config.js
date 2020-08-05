@@ -5,6 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
+
   siteName: 'CAM Construction',
   sitURL: 'https://camcustom.com',
   siteDescription: 'Custom residential construction work.',
@@ -23,5 +24,5 @@ module.exports = {
         publicPath: '/admin'
       }
     },
-  ]
+  ],
 }
