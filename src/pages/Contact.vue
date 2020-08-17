@@ -69,7 +69,7 @@ export default {
                 ...this.formData,
             }),
             })
-            .then(() => this.$router.push('/success'))
+            .then(() => this.$router.push('/'))
             .catch(error => alert(error))
     },
 }
