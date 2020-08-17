@@ -74,4 +74,17 @@ p {
   border-width: 1px;
 
 }
+
+@media screen and (max-width: 700px) {
+  .title-tagline {
+    padding: 5rem 0 0 5rem;
+  }
+  .about {
+    padding: 2rem;
+    color: #010180;
+  }
+  li {
+    color: #010180;
+  }
+}
 </style>

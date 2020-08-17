@@ -99,4 +99,12 @@ p {
   font-size: 0.9rem;
 }
 
+@media screen (max-width: 700px) {
+    .contact-info {
+        padding: 0;
+    }
+    .contact-form {
+        padding: 0;
+    }
+}
 </style>

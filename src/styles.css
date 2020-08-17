@@ -16,3 +16,9 @@
   ::-ms-input-placeholder { /* Microsoft Edge */
    color: black;
   }
+
+  @media screen and (max-width: 700px) {
+    .nav-link {
+      color: #010180;
+    }
+  }

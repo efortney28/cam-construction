@@ -2,7 +2,7 @@
     <Layout>
         <div class="container-fluid" id="image-container">
             <div class="row">
-                <div class="col-sm" v-for="work in $page.work.edges">
+                <div class="col-sm work-image" v-for="work in $page.work.edges">
                     <b-img thumbnail fluid width="200" height="200" :src="work.node.images"></b-img>
                 </div>
             </div>
@@ -40,5 +40,11 @@ export default {
 </script>
 
 <style>
+@media screen and (max-width: 700px) {
+    .work-image {
+        text-align: center;
+        padding: 0.5rem;
+    }
+}
 
 </style>
