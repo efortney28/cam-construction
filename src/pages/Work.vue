@@ -4,6 +4,21 @@
     </Layout>
 </template>
 
+<!--<page-query>
+    query Work {
+        work: allWorkEntry {
+            edges {
+                node {
+                    name
+                    date
+                    description
+                    images
+                }
+            }
+        }
+    }
+</page-query>-->
+
 <script>
 export default {
     metaInfo: {
