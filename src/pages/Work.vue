@@ -1,10 +1,16 @@
 <template>
     <Layout>
-        Our Work Page
+        <div class="container-fluid" id="image-container">
+            <div class="row">
+                <div class="col-sm" v-for="work in $page.work.edges">
+                    <b-img thumbnail fluid width="200" height="200" :src="work.node.images"></b-img>
+                </div>
+            </div>
+        </div>
     </Layout>
 </template>
 
-<!--<page-query>
+<page-query>
     query Work {
         work: allWorkEntry {
             edges {
@@ -17,13 +23,19 @@
             }
         }
     }
-</page-query>-->
+</page-query>
 
 <script>
 export default {
     metaInfo: {
         title: 'CAM Contracting | Our Work'
-    }
+    },
+    components: {  },
+    data() {
+        return {
+            
+        }
+    },
 }
 </script>
 

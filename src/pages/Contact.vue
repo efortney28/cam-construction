@@ -5,8 +5,8 @@
                 <div class="col-lg contact-info">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et sodales magna, vel lacinia mauris. Suspendisse potenti. Cras at ornare ex, eu pulvinar enim. In imperdiet diam in urna facilisis, et faucibus sapien aliquet. Nunc a eros nec augue dapibus tincidunt ut vel sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce quis posuere enim.</p>
                 </div>
-                <div class="col-lg contact-form">
-                    <form
+                <div class="col-lg contact-form text-center">
+                    <b-form
                         name="contact"
                         method="post"
                         v-on:submit.prevent="handleSubmit"
@@ -22,24 +22,22 @@
                         </p>
                         <div class="sender-info">
                             <div>
-                            <label for="name" class="label" >Name</label>
-                            <input type="text" name="name" v-model="formData.name" />
+                                <b-form-input type="text" name="name" v-model="formData.name" placeholder="Your Name" />
                             </div>
                             <div>
-                            <label for="email">Email</label>
-                            <input type="email" name="email" v-model="formData.email" />
-                            <label for="phone" class="label">Phone Number</label>
-                            <input type="text" name="phone" v-model="formData.phone" />
+                                <b-form-input type="email" name="email" v-model="formData.email" placeholder="Your Email" />
+                            </div>
+                            <div>
+                                <b-form-input type="text" name="phone" v-model="formData.phone" placeholder="Your Phone Number" />
                             </div>
                         </div>
 
                         <div class="message-wrapper">
-                            <label for="message">Message</label>
-                            <textarea name="message" v-model="formData.message"></textarea>
+                            <b-form-textarea name="message" v-model="formData.message" placeholder="What would you like done?"></b-form-textarea>
                         </div>
 
-                        <button type="submit">Submit</button>
-                    </form>
+                        <b-button pill type="submit" id="submitButton">Submit</b-button>
+                    </b-form>
                 </div>
             </div>
         </div>
@@ -79,5 +77,26 @@ export default {
 </script>
 
 <style>
+input {
+    padding: 1rem;
+    margin: 1rem 0;
+}
+textarea {
+    padding: 1rem;
+    margin: 1rem 0;
+}
+#submitButton {
+    background: #FCD146;
+    border: none;
+    font-family: "Rubik", sans-serif;
+    color: #010180;
+}
+.contact-info {
+    padding: 5rem 2rem;
+}
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+}
 
 </style>
