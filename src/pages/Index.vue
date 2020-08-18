@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg title-tagline">
           <h1 class="title">
-            CAM Custom Construction
+            CAM Custom Contracting
           </h1>
           <h2 id="tagline">
             For all your home improvement needs
@@ -14,7 +14,7 @@
           <h2 id="about" class="text-center">
             About Us
           </h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non feugiat eros. Aenean libero velit, tempus eu egestas sed, faucibus sed sem. Sed sagittis quis diam vitae mollis. Nullam sagittis metus felis, vel vulputate urna pellentesque vitae. Morbi semper volutpat lacus.</p>
+          <p>We have 30 years of experience building and remodeling homes. We can do custom kitchens, bathrooms, tile work, concrete work, wood work, anything that you need done, we can do it.  </p>
           <b-button pill size="lg" class="CTA" href="/contact">Get a free quote</b-button>
         </div>
       </div>
