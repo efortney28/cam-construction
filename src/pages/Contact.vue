@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg contact-info">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et sodales magna, vel lacinia mauris. Suspendisse potenti. Cras at ornare ex, eu pulvinar enim. In imperdiet diam in urna facilisis, et faucibus sapien aliquet. Nunc a eros nec augue dapibus tincidunt ut vel sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce quis posuere enim.</p>
+                    <p>Fill out the form and we will get back to you as soon as possible!</p>
                 </div>
                 <div class="col-lg contact-form text-center">
                     <b-form
