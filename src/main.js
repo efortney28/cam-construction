@@ -25,10 +25,6 @@ export default function (Vue, { router, head, isClient }) {
       name: 'keywords',
       content: 'home renovation, houston, texas, builder, construction'
     },
-    {
-      key: 'description',
-      name: 'description',
-      content: config.siteDescription
-    },
+  
   )
 }
