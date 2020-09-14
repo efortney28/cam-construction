@@ -25,6 +25,10 @@ export default function (Vue, { router, head, isClient }) {
       name: 'keywords',
       content: 'home renovation, houston, texas, builder, construction'
     },
+    {
+      name: 'google-site-verification',
+      content: 'WAEi3CrQeKww-xkn-8Y9DDfNnngiHTXL_sUXEIDObCE'
+    },
   
   )
 }
