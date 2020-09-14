@@ -30,5 +30,18 @@ module.exports = {
         id: 'UA-99907577-2'
       }
     },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        cacheTime: 600000,
+        exclude: ['/admin'],
+        config: {
+          '/*': {
+            changefreq:'weekly',
+            priority: 0.5
+          }
+        }
+      }
+    },
   ],
 }
