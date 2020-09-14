@@ -18,4 +18,17 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap'
   })
+
+  head.meta.push(
+    {
+      key:'keywords',
+      name: 'keywords',
+      content: 'home renovation, houston, texas, builder, construction'
+    },
+    {
+      key: 'description',
+      name: 'description',
+      content: config.siteDescription
+    },
+  )
 }
