@@ -1,0 +1,15 @@
+:root {
+    --blue-color: #0072C9;
+    --text-color: #333333;
+    --green-color: #379634;
+    --bg-color: #F8F8F8;
+}
+body {
+    background-color: var(--bg-color);
+}
+.dark-text {
+    color: var(--text-color);
+}
+.light-text {
+    color: var(--bg-color);
+}
