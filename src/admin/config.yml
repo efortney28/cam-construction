@@ -16,3 +16,11 @@ collections:
       - {label: "Completion Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Images", name: "images", widget: "image"}
+  - name: "testamonial"
+    label: "Testamonial"
+    folder: "content/testamonials"
+    create: true
+    fields:
+      - {label: "Customer Name", name: "name", widget: "string"}
+      - {label: "Customer Location", name: "location", widget: "string"}
+      - {label: "Customer Comments", name: "comments", widget: "string"}

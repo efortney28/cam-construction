@@ -13,7 +13,7 @@
           <p id="about-text">We have 30 years of experience building and remodeling homes in the greater Houston Area including, but not limited to Liberty, Dayton, Kountze, Cove, Baytown, Lake Jackson, and more. We can do custom kitchens, bathrooms, tile work, concrete work, wood work, anything that you need done, we can do it.  </p>
           <b-button pill size="lg" class="CTA" href="/contact">Get a free quote</b-button>
         </section>
-        <!-- <section id="testamonials">
+        <section id="testamonials">
           <h2 class="testamonial text-center">
             Testamonials
           </h2>
@@ -29,7 +29,7 @@
               Baytown, TX
             </span>
           </p>
-        </section> -->
+        </section>
         <section>
           <h2 class="why-us-title text-center">Why Us?</h2>
           <article class="why-us">
@@ -123,7 +123,7 @@ export default {
 }
 .why-us-title {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .why-us-item {
   display: flex;
