@@ -42,11 +42,4 @@ export default {
 </script>
 
 <style>
-@media screen and (max-width: 700px) {
-    .work-image {
-        text-align: center;
-        padding: 0.5rem;
-    }
-}
-
 </style>

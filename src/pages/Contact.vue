@@ -77,34 +77,4 @@ export default {
 </script>
 
 <style>
-input {
-    padding: 1rem;
-    margin: 1rem 0;
-}
-textarea {
-    padding: 1rem;
-    margin: 1rem 0;
-}
-#submitButton {
-    background: #FCD146;
-    border: none;
-    font-family: "Rubik", sans-serif;
-    color: #010180;
-}
-.contact-info {
-    padding: 5rem 2rem;
-}
-p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.9rem;
-}
-
-@media screen (max-width: 700px) {
-    .contact-info {
-        padding: 0;
-    }
-    .contact-form {
-        padding: 0;
-    }
-}
 </style>
