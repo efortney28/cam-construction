@@ -1,11 +1,12 @@
 <template>
     <Layout>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg contact-info">
+            <main class="row">
+                <section class="col-lg contact-info text-center">
+                    <h1 class="contact-us-title text-center">Contact Us</h1>
                     <p>Fill out the form and we will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg contact-form text-center">
+                </section>
+                <section class="col-lg contact-form text-center">
                     <b-form
                         name="contact"
                         method="post"
@@ -22,24 +23,24 @@
                         </p>
                         <div class="sender-info">
                             <div>
-                                <b-form-input type="text" name="name" v-model="formData.name" placeholder="Your Name" />
+                                <b-form-input class="form-input" type="text" name="name" v-model="formData.name" placeholder="Your Name" />
                             </div>
                             <div>
-                                <b-form-input type="email" name="email" v-model="formData.email" placeholder="Your Email" />
+                                <b-form-input class="form-input" type="email" name="email" v-model="formData.email" placeholder="Your Email" />
                             </div>
                             <div>
-                                <b-form-input type="text" name="phone" v-model="formData.phone" placeholder="Your Phone Number" />
+                                <b-form-input class="form-input" type="text" name="phone" v-model="formData.phone" placeholder="Your Phone Number" />
                             </div>
                         </div>
 
                         <div class="message-wrapper">
-                            <b-form-textarea name="message" v-model="formData.message" placeholder="What would you like done?"></b-form-textarea>
+                            <b-form-textarea class="form-textarea" name="message" v-model="formData.message" placeholder="What would you like done?"></b-form-textarea>
                         </div>
 
                         <b-button pill type="submit" id="submitButton">Submit</b-button>
                     </b-form>
-                </div>
-            </div>
+                </section>
+            </main>
         </div>
     </Layout>
 </template>
@@ -76,35 +77,36 @@ export default {
 }
 </script>
 
-<style>
-input {
-    padding: 1rem;
-    margin: 1rem 0;
-}
-textarea {
-    padding: 1rem;
-    margin: 1rem 0;
-}
-#submitButton {
-    background: #FCD146;
-    border: none;
-    font-family: "Rubik", sans-serif;
-    color: #010180;
+<style scoped>
+.contact-us-title {
+    font-size: 1.75rem;
+    color: var(--blue-color);
+    margin-bottom: 1rem;
 }
 .contact-info {
-    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 1rem;
 }
-p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.9rem;
+.form-input {
+    margin-top: 2rem;
 }
-
-@media screen (max-width: 700px) {
-    .contact-info {
-        padding: 0;
-    }
+textarea {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#submitButton {
+    padding: 0.75rem;
+    width: 150px;
+    font-size: 1.2rem;
+    background: var(--green-color);
+}
+@media screen and (min-width:1000px) {
     .contact-form {
-        padding: 0;
+        margin-top: 3rem;
+        margin-right: 3rem;
     }
 }
 </style>

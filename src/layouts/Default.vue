@@ -24,7 +24,4 @@ export default {
 </script>
 
 <style>
-  /*html {
-      background: none;
-  }*/
 </style>
