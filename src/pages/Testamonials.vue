@@ -94,6 +94,9 @@ main {
     margin-top: 2rem;
 }
 .testamonial-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-right: 1rem;
     margin-left: 1rem;
 }
@@ -109,5 +112,12 @@ textarea {
     width: 150px;
     font-size: 1.2rem;
     background: var(--green-color);
+}
+
+@media screen and (min-width: 1000px) {
+    .testamonial-form {
+        margin-right: 23rem;
+        margin-left: 23rem;
+    }
 }
 </style>
