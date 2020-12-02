@@ -48,7 +48,7 @@
 <script>
 export default {
     metaInfo: {
-        title: 'CAM Contracting | Contact Us'
+        title: 'CAM Custom | Contact Us'
     },
     data() {
         return{
