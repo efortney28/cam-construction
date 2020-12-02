@@ -35,17 +35,17 @@
           <article class="why-us">
             <section class="why-us-item text-center">
               <h3 class="item-title">Experienced</h3>
-              <g-image class="item-image" src="../../static/experience.png" width="300px" />
+              <g-image class="item-image" alt="experience image" src="../../static/experience.png" width="300px" />
               <p class="item-description">With 30 years experience, we can do whatever you may want!</p>
             </section>
             <section class="why-us-item text-center">
               <h3 class="item-title">Save Time</h3>
-              <g-image class="item-image" src="../../static/save_time_and_money.png" width="300px" />
+              <g-image class="item-image" alt="save time image" src="../../static/save_time_and_money.png" width="300px" />
               <p class="item-description">Get everything done in one place!</p>
             </section>
             <section class="why-us-item text-center">
               <h3 class="item-title">Get Your Dream Home</h3>
-              <g-image class="item-image" src="../../static/dream_home.png" width="300px" />
+              <g-image class="item-image" src="../../static/dream_home.png" alt="get your dream home image" width="300px" />
               <p class="item-description">We can make your dream home a reality!</p>
             </section>
           </article>
