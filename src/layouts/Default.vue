@@ -24,4 +24,19 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: Poppins;
+  src: url('../assets/Poppins-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: Poppins;
+  src: url('../assets/Poppins-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: Poppins;
+  src: url('../assets/Poppins-Light.ttf');
+  font-weight: 300;
+}
 </style>

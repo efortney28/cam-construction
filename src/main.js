@@ -14,16 +14,11 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
   Vue.use(BootstrapVue)
 
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap'
-  })
-
   head.meta.push(
     {
       key:'keywords',
       name: 'keywords',
-      content: 'home renovation, houston, texas, builder, construction'
+      content: 'home renovation, houston, texas, builder, construction, liberty, baytown, beaumont, dream home, home, driveways, wood work, concrete work,'
     },
     {
       name: 'google-site-verification',

@@ -2,7 +2,7 @@
     <nav>
         <b-navbar dark toggleable="lg">
             <b-navbar-brand>
-                <g-image class="brand-image" src="../../static/Logo.png" width="100px" />
+                <g-image class="brand-image" src="../../static/Logo.png" alt="CAM Custom Logo" width="100px" />
             </b-navbar-brand>
 
             <b-navbar-toggle dark target="nav-collapse"></b-navbar-toggle>
