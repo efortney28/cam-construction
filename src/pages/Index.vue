@@ -8,6 +8,7 @@
           <h2 id="tagline" class="text-center">
             For all your home improvement needs
           </h2>
+          <g-image class="home-image" src="../../static/construction.png" alt="Custom construction work" width="400px" />
         </section>
         <section class="col-lg about text-center">
           <p id="about-text">We have 30 years of experience building and remodeling homes in the greater Houston Area including, but not limited to Liberty, Dayton, Kountze, Cove, Baytown, Lake Jackson, and more. We can do custom kitchens, bathrooms, tile work, concrete work, wood work, anything that you need done, we can do it.  </p>
@@ -72,16 +73,22 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 #title {
   font-size: 1.75rem;
+  color: var(--text-color);
 }
 #tagline {
-  margin-top: 1.5rem;
+  color: var(--text-color);
+  margin-top: 0;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
+}
+.home-image {
+  margin-left: -1rem;
 }
 #about-text {
   font-size: 0.9rem;
