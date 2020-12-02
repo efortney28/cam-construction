@@ -32,7 +32,7 @@
                     </div>
 
                     <div class="message-wrapper">
-                        <b-form-textarea class="form-textarea" name="message" v-model="formData.message" placeholder="Comments about job..."></b-form-textarea>
+                        <b-form-textarea class="form-textarea" name="message" v-model="formData.message" placeholder="Comments about the job..."></b-form-textarea>
                     </div>
 
                     <b-button pill type="submit" id="submitButton">Submit</b-button>

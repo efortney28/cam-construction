@@ -57,7 +57,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'CAM Contracting | Home'
+    title: 'CAM Custom | Home'
   }
 }
 </script>

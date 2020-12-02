@@ -31,7 +31,7 @@
 <script scoped>
 export default {
     metaInfo: {
-        title: 'CAM Contracting | Our Work'
+        title: 'CAM Custom | Our Work'
     },
     components: {  },
     data() {
