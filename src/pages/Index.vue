@@ -8,29 +8,18 @@
           <h2 id="tagline" class="text-center">
             For all your home improvement needs
           </h2>
-          <g-image class="home-image" src="../../static/construction.png" alt="Custom construction work" width="400px" />
+          <g-image class="home-image" src="../../static/construction.png" alt="Custom construction work" width="350px" />
         </section>
         <section class="col-lg about text-center">
           <p id="about-text">We have 30 years of experience building and remodeling homes in the greater Houston Area including, but not limited to Liberty, Dayton, Kountze, Cove, Baytown, Lake Jackson, and more. We can do custom kitchens, bathrooms, tile work, concrete work, wood work, anything that you need done, we can do it.  </p>
           <b-button pill size="lg" class="CTA" href="/contact">Get a free quote</b-button>
         </section>
-        <!-- <section id="testamonials">
-          <h2 class="testamonial text-center">
-            Testamonials
-          </h2>
-          <p class="testamonial-text text-center">
-            We had CAM Custom build us a wonderful, new deck and patio. The final product is beautiful! Highly Recommended!
-          </p>
-          <p class="testamonial-author text-center">
-            -
-            <span class="author">
-            Jane Smith,
-            </span> 
-            <span class="location">
-              Baytown, TX
-            </span>
-          </p>
-        </section> -->
+        <section id="testamonials">
+          <article class="testamonial" v-for="testamonial in $page.testamonial.edges">
+            <p class="comment">"{{ testamonial.node.comments }}"</p>
+            <p class="author">- <span class="bold">{{ testamonial.node.name}}</span>, <span class="italic">{{ testamonial.node.location }}</span></p>
+          </article>
+        </section>
         <section>
           <h2 class="why-us-title text-center">Why Us?</h2>
           <article class="why-us">
@@ -54,6 +43,20 @@
     </main>
   </Layout>
 </template>
+
+<page-query>
+  query {
+    testamonial: allTestamonial {
+      edges {
+        node {
+          name
+          location
+          comments
+        }
+      }
+    }
+  }
+</page-query>
 
 <script>
 export default {
@@ -98,19 +101,31 @@ export default {
   margin-top: 2rem;
   padding: 0 1rem 0 1rem;
   background-color: var(--green-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.bold {
+  font-weight: 500;
+}
+.italic {
+  font-style: italic;
 }
 .testamonial {
+  text-align: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  color: var(--bg-color);
+}
+.comment {
   margin-top: 2rem;
-  font-size: 1.5rem;
+  line-height: 1.4rem;
+  font-size: 0.75rem;
   color: var(--bg-color);
 }
-.testamonial-text {
-  margin-top: 1.5rem;
-  font-size: 0.9rem;
-  color: var(--bg-color);
-}
-.testamonial-author {
-  font-size: 0.85rem;
+.author {
+  font-size: 0.75rem;
   color: var(--bg-color);
   margin-bottom: 2rem;
 }
@@ -130,6 +145,7 @@ export default {
 }
 .why-us-title {
   font-size: 1.5rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 .why-us-item {
@@ -154,6 +170,12 @@ export default {
   margin-left: 2rem;
 }
 @media screen and (min-width: 1000px) {
+  #testamonials {
+  flex-direction: row;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+
+}
   .why-us-title {
     margin-top: 2rem;
   }

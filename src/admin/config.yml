@@ -16,8 +16,9 @@ collections:
       - {label: "Completion Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Images", name: "images", widget: "image"}
+  
   - name: "testamonial"
-    identifier_field: name
+    identifier_field: "name"
     label: "Testamonial"
     folder: "content/testamonials"
     create: true

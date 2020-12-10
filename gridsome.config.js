@@ -19,6 +19,13 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/testamonials/**/*.md',
+        typeName: 'Testamonial'
+      }
+    },
+    {
       use: 'gridsome-plugin-netlify-cms',
       options: {
         publicPath: '/admin'

@@ -28,7 +28,7 @@
     }
 </page-query>
 
-<script scoped>
+<script>
 export default {
     metaInfo: {
         title: 'CAM Custom | Our Work'
@@ -42,7 +42,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 section {
     display: flex;
     flex-direction: column;
