@@ -1,7 +1,7 @@
 <template>
     <section class="footer">
         <section class="contact-info">
-            <a class="fb-link" target="_blank" href="https://www.facebook.com/CamCustomContracting">
+            <a class="fb-link" rel="noopener" target="_blank" href="https://www.facebook.com/CamCustomContracting">
                 <font-awesome class="contact-icon" :icon="['fab', 'facebook']"/>
             </a>
             <section class="email-container">
