@@ -2,8 +2,12 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { config, library } from '@fortawesome/fontawesome-svg-core'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import BootstrapVue from 'bootstrap-vue'
-
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import '~/styles.css'
@@ -11,6 +15,8 @@ import '~/styles.css'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
+  config.autoAddCss = false
+  library.add(faFacebook, faEnvelope)
   Vue.component('Layout', DefaultLayout)
   Vue.use(BootstrapVue)
 
@@ -26,4 +32,5 @@ export default function (Vue, { router, head, isClient }) {
     },
   
   )
+  Vue.component('font-awesome', FontAwesomeIcon)
 }

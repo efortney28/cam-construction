@@ -1,18 +1,20 @@
 <template>
   <Layout>
     <main class="home-container">
-        <section class="col-lg title-tagline">
-          <h1 id="title" class="text-center dark-text">
-            CAM Custom Contracting
-          </h1>
-          <h2 id="tagline" class="text-center">
-            For all your home improvement needs
-          </h2>
-          <g-image class="home-image" src="../../static/construction.png" alt="Custom construction work" width="350px" />
-        </section>
-        <section class="col-lg about text-center">
-          <p id="about-text">We have 30 years of experience building and remodeling homes in the greater Houston Area including, but not limited to Liberty, Dayton, Kountze, Cove, Baytown, Lake Jackson, and more. We can do custom kitchens, bathrooms, tile work, concrete work, wood work, anything that you need done, we can do it.  </p>
-          <b-button pill size="lg" class="CTA" href="/contact">Get a free quote</b-button>
+        <section class="main-content">
+          <section class="col-lg title-tagline">
+            <h1 id="title" class="text-center dark-text">
+              CAM Custom Contracting
+            </h1>
+            <h2 id="tagline" class="text-center">
+              For all your home improvement needs
+            </h2>
+            <g-image class="home-image" src="../../static/construction.png" alt="Custom construction work" width="350px" />
+          </section>
+          <section class="col-lg about text-center">
+            <p id="about-text">We have 30 years of experience building and remodeling homes in the greater Houston Area including, but not limited to Liberty, Dayton, Kountze, Cove, Baytown, Lake Jackson, and more. We can do custom kitchens, bathrooms, tile work, concrete work, wood work, anything that you need done, we can do it.  </p>
+            <b-button pill size="lg" class="CTA" href="/contact">Get a free quote</b-button>
+          </section>
         </section>
         <section id="testamonials">
           <article class="testamonial" v-for="testamonial in $page.testamonial.edges">
@@ -20,7 +22,7 @@
             <p class="author">- <span class="bold">{{ testamonial.node.name}}</span>, <span class="italic">{{ testamonial.node.location }}</span></p>
           </article>
         </section>
-        <section>
+        <section class="main-content">
           <h2 class="why-us-title text-center">Why Us?</h2>
           <article class="why-us">
             <section class="why-us-item text-center">
@@ -170,6 +172,10 @@ export default {
   margin-left: 2rem;
 }
 @media screen and (min-width: 1000px) {
+  .main-content{
+    width: 70%;
+    margin: 0 auto
+  }
   #testamonials {
   flex-direction: row;
   grid-template-columns: 1fr 1fr 1fr;

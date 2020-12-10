@@ -4,6 +4,7 @@
       <Navbar />
     </header>
     <slot/>
+    <footer><PageFooter /></footer>
   </div>
 </template>
 
@@ -17,8 +18,10 @@ query {
 
 <script>
 import Navbar from '@/components/Navbar'
+import PageFooter from '@/components/PageFooter'
+
 export default {
-  components: {Navbar},
+  components: {Navbar, PageFooter},
   
 }
 </script>
