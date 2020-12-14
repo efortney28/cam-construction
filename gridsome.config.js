@@ -7,7 +7,7 @@
 module.exports = {
 
   siteName: 'CAM Construction',
-  sitURL: 'https://camcustom.com',
+  sitURL: 'https://camcustom.com/',
   siteDescription: 'Custom residential and home improvement in the greater Houston area and surrounding areas such as Liberty, Baytown, Beaumont, and more!',
   icon: 'src/favicon.png',
   plugins: [
@@ -37,17 +37,24 @@ module.exports = {
         id: 'UA-99907577-2'
       }
     },
-    /* {
+    {
       use: '@gridsome/plugin-sitemap',
       options: {
         exclude: ['/admin'],
         config: {
-          '/*': {
-            changefreq:'weekly',
-            priority: 0.5
+          '/': {
+            changefreq: 'monthly',
+            priority: 0.5,
+          },
+          '/work/': {
+            changefreq: 'weekly',
+            priority: 0.7,
+          },
+          '/contact/': {
+            changefreq: 'monthly',
+            priority: 0.3
           }
         }
       }
-    }, */
   ],
 }
