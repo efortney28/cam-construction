@@ -7,7 +7,7 @@
 module.exports = {
 
   siteName: 'CAM Construction',
-  sitURL: 'https://camcustom.com/',
+  siteURL: 'https://camcustom.com/',
   siteDescription: 'Custom residential and home improvement in the greater Houston area and surrounding areas such as Liberty, Baytown, Beaumont, and more!',
   icon: 'src/favicon.png',
   plugins: [
