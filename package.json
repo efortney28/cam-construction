@@ -16,7 +16,7 @@
     "gridsome": "^0.7.23",
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "netlify-cms": "^2.10.75",
-    "vue": "^2.6.12"
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
